@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player 1</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/icons/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/icons/themify-icons/themify-icons.css">
+</head>
+
+<body>
+
+    <div class="player">
+
+        <!-- Dashboard -->
+        <div class="dashboard">
+
+            <!-- Header -->
+            <div class="header">
+                <i class="ti-menu header-menu"></i>
+                <div class="wrap-header">
+                    <h4>Now Playing</h4>
+                    <h2 class="header-name-music js-header-name-music">String 57th & 9th</h2>
+                    <h5 class="header-player-song js-header-player-song">- Player -</h5>
+                </div>
+                <i class="far fa-clone header-clone"></i>
+            </div>
+
+            <!-- Img Cd-->
+            <div class="img-cd">
+                <div class="img-cd-thumb">
+                    <img src="./assets/img/img_0.jpg" alt="" class="img-cd-item">
+                </div>
+            </div>
+
+            <div class="height-24"></div>
+
+            <!-- Control -->
+
+            <div class="wrap-input">
+                <span class="current-timemusic">00</span>
+                <input type="range" name="" id="progress" class="progress" value="0" step="1" min="0" max="100">
+                <span class="sum-time-music">00</span>
+            </div>
+
+
+            <div class="control">
+                <div class="btn btn-redo">
+                    <i class="ti-loop loop-item"></i>
+                </div>
+
+                <div class="btn btn-control-skip-left">
+                    <i class="ti-control-skip-backward"></i>
+                </div>
+
+                <div class="btn btn-play-pause">
+                    <i class="ti-control-pause pause-item"></i>
+                    <i class="ti-control-play play-item"></i>
+                </div>
+
+                <div class="btn btn-control-skip-right">
+                    <i class="ti-control-skip-forward"></i>
+                </div>
+
+                <div class="btn btn-control-suffer">
+                    <i class="ti-control-shuffle shuffle-item"></i>
+                </div>
+            </div>
+
+            <audio src="" id="audio"></audio>
+
+        </div>
+
+        <!-- Playlist -->
+        <div class="play-list js-list-music">
+            <!-- <div class="play-list-music">
+                <div class="play-list-item">
+                    <h4 class="music-name">Name</h4>
+                </div>
+                <div class="play-list-icon">
+                    <i class="ti-more-alt"></i>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+    <script src="./assets/JS/main.js"></script>
+</body>
+
+</html>
